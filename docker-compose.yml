@@ -1,0 +1,46 @@
+services:
+  haproxy:
+    build:
+      context: ./haproxy
+      dockerfile: Dockerfile
+    container_name: "haproxy-proxy"
+    tty: true
+    networks:
+      - app_network
+    ports:
+      - "81:80"
+
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "nginx-proxy"
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./nginx-conf/conf.d:/etc/nginx/conf.d
+      - ./logs:/var/log/nginx
+      # - ./frontend/src:/home/app
+      - ./frontend2/src:/home/app2
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: "frontend_app"
+    networks:
+      - app_network
+    ports:
+      - "3000:8080"
+  frontend2:
+    build:
+      context: ./frontend2
+      dockerfile: Dockerfile
+    container_name: "frontend_app2"
+    networks:
+      - app_network
+    ports:
+      - "3001:8080"
+networks:
+  app_network:
+    name: app_network

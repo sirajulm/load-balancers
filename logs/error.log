@@ -1,0 +1,17 @@
+2022/07/08 15:06:50 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:06:52 [error] 24#24: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: app.lvh.me, request: "GET / HTTP/1.1", upstream: "http://172.18.0.3:8081/", host: "app.lvh.me"
+2022/07/08 15:06:53 [error] 24#24: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: app.lvh.me, request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.18.0.3:8081/favicon.ico", host: "app.lvh.me", referrer: "http://app.lvh.me/"
+2022/07/08 15:09:40 [error] 25#25: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: app.lvh.me, request: "GET / HTTP/1.1", upstream: "http://172.18.0.3:8081/", host: "app.lvh.me"
+2022/07/08 15:14:40 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:33:17 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:35:20 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:37:35 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:39:31 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:41:36 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:43:16 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:44:53 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:45:20 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:45:56 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:49:47 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:51:05 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
+2022/07/08 15:54:51 [warn] 1#1: conflicting server name "app.lvh.me" on 0.0.0.0:80, ignored
